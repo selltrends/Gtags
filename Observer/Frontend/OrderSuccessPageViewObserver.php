@@ -55,7 +55,7 @@ class OrderSuccessPageViewObserver implements ObserverInterface
         if (empty($orderIds) || !is_array($orderIds)) {
             return;
         }
-        $block = $this->_layout->getBlock('magepal_gtm_datalayer');
+        $block = $this->_layout->getBlock('atopt_gtm_datalayer');
         if ($block) {
             $block->setOrderIds($orderIds);
         }

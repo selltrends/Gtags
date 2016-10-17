@@ -128,7 +128,7 @@ class Tm extends Template {
      */
     public function getGtmTrackingCode() {
         $this->_eventManager->dispatch(
-            'magepal_datalayer',
+            'atopt_datalayer',
             ['dataLayer' => $this]
         );
         $result = [];
