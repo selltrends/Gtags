@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2017 Atopt Limited. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start">
+          <block class="Atopt\Gtags\Block\Tm" name="atopt_gtm_datalayer" as="atopt_gtm_datalayer" template="data_layer.phtml" cacheable="false"/>
+          <block class="Atopt\Gtags\Block\GtmCode" name="gtm_code" as="gtm_code" template="gtm_code.phtml" />
+        </referenceContainer>
+    </body>
+</page>
